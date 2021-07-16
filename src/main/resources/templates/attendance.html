@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>考勤信息</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
+    <script src="/static/plugin/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="/static/js/index.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="attendance_content">
+    <div class="attendance_date">
+        <span class="year"></span>
+        <span class="year"></span>
+        <span class="year"></span>
+        <span class="year"></span>
+        <span class="year1">年</span>
+        <span class="year"></span>
+        <span class="year"></span>
+        <span class="year1">月</span>
+        <span class="year"></span>
+        <span class="year"></span>
+        <!--        <div class="year1">日</div>-->
+    </div>
+    <div class="line1"></div>
+    <div class="attendance_text">
+        <div class="morning">
+            <div class="up" id="morning_up">
+                <span class="time" id="morning_up_time">09:00</span>
+                <span class="type" id="morning_up_value">未打卡</span>
+            </div>
+            <div class="down" id="morning_down">
+                <span class="time" id="morning_down_time">12:00</span>
+                <span class="type" id="morning_down_value">未打卡</span>
+            </div>
+        </div>
+        <div class="line2"></div>
+        <div class="afternoon">
+            <div class="up" id="afternoon_up">
+                <span class="time" id="afternoon_up_time">14:00</span>
+                <span class="type" id="afternoon_up_value">未打卡</span>
+            </div>
+            <div class="down" id="afternoon_down">
+                <span class="time" id="afternoon_down_time">17:30</span>
+                <span class="type" id="afternoon_down_value">未打卡</span>
+            </div>
+        </div>
+    </div>
+</div>
+<input id="jobNumber" type="hidden" th:value="${jobNumber}"/>
+<input id="nowDate" type="hidden" th:value="${nowDate}"/>
+</body>
+</html>

@@ -1,0 +1,31 @@
+server:
+  port: 8881
+
+#配置oracle连接数据
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    username: fanpeng
+    password: merit
+  thymeleaf:
+    #模板的模式，支持 HTML, XML TEXT JAVASCRIPT
+    mode: HTML5
+    #编码 可不用配置
+    encoding: UTF-8
+    #开发配置为false,避免修改模板还要重启服务器
+    cache: false
+    #配置模板路径，默认是templates，可以不用配置
+    prefix: classpath:/templates
+    #内容类别,可不用配置
+    servlet:
+      content-type: text/html
+#mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: com.merit.attendance.entity
+  configuration:
+    cache-enabled: false
+    map-underscore-to-camel-case: true
+
+

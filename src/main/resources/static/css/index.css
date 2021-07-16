@@ -1,0 +1,127 @@
+body {
+    width: 98%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.attendance_content {
+    width: 100%;
+    height: 20%;
+    margin: 12% auto;
+}
+
+.attendance_date {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.attendance_date .year {
+    width: 9%;
+    height: 40px;
+    float: left;
+    background: url(/static/img/icon1.png) no-repeat;
+    background-size: cover;
+    line-height: 40px;
+    color: #ffff;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    font-size: 36px;
+}
+
+.attendance_date .year1 {
+    width: 6%;
+    float: left;
+    line-height: 40px;
+    color: #000000;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.line1 {
+    width: 100%;
+    height: 1px;
+    background-color: #d0cece;
+    margin: 5% auto;
+}
+
+.attendance_text {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.attendance_text .morning {
+    margin-top: 2%;
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+.attendance_text .morning .up {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #90af04;
+    border-radius: 5px;
+}
+
+.attendance_text .morning .down {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #90af04;
+    border-radius: 5px;
+}
+
+.line2 {
+    width: 0.2%;
+    height: 100px;
+    background-color: #d0cece;
+    margin: 2% 9.9% 0 9.9%;
+    float: left;
+}
+
+.attendance_text .afternoon {
+    margin-top: 2%;
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+
+
+.attendance_text .afternoon .up {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #90af04;
+    border-radius: 5px;
+}
+
+.attendance_text .afternoon .down {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: #90af04;
+    border-radius: 5px;
+}
+
+.time {
+    width: 43%;
+    color: #fff;
+    line-height: 40px;
+    margin-left: 7%;
+    float: left;
+}
+
+.type {
+    width: 43%;
+    float: right;
+    line-height: 40px;
+    margin-right: 7%;
+    color: #ffffff;
+    text-align: right;
+}
